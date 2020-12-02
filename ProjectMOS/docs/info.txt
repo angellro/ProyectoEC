@@ -1,0 +1,9 @@
+Versión del proyecto: 1.0
+MOS by KOKOA Software
+Autor: Angel Lahuerta Romero
+----------------------------------------------------------------------------------------
+VisorVR
+Versión: 1.0
+Descripción: 	Integra la API de PanoRaven para imagenes en 360 grados,
+		como primera muestra a falta del motor propietario de VR.
+----------------------------------------------------------------------------------------
