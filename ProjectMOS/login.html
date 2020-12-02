@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOS | Sesión</title>
+    <!-- Favicon de la pág MOS -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Archivo CSS principal de login.html -->
+    <link rel="stylesheet" href="css/styleSesion.css">
+
+    <!-- =======================================================
+    Autor: Ángel Lahuerta Romero
+    Empresa: KOKOA Software
+    Web: MOS - Login ID
+    Versión: 1.0
+    ============================================================ -->
+</head>
+
+<body>
+    <header></header>
+    <!--Sección principal para el contenedor de ID-->
+    <section>
+        <div class="contenedor">
+            <h1 class="titulo">ID</h1>
+            <!--Formulario principal para la recopilacón y control de errores en datos-->
+            <form class="sesion_form" action="index.html" method="POST" name="form" onsubmit="return validarUsuario()">
+                <div class="enum">Email</div>
+                <input autocomplete="off" type="text" name="email">
+                <div id="error_email"> Por favor introduzca Email</div>
+                <div class="enum2">Contraseña</div>
+                <input type="password" name="clave">
+                <div id="error_pass"> Por favor introduzca su Clave</div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
+    <aside></aside>
+    <footer></footer>
+    <!--Conexión del js para la validación-->
+    <script src="js/sesion.js"></script>
+
+</html>
