@@ -1,0 +1,89 @@
+/*
+  Web: MOS - Login
+  Versión: 1.0
+  Autor: Ángel Lahuerta Romero
+*/
+
+
+/*====================================
+          Estilo General para Login.html
+======================================*/
+
+/*------Diseño con aplicación general------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /*Existe el recurso en img, pero en este momento no la reconoce por ello la ruta*/
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/875244468225515264/214231A4122AC0492F8EE017FF003FAF512A53A7/");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: sans-serif;
+    opacity: 0.6;
+}
+section .contenedor{
+    position: relative;
+    margin-top: 62%;
+    width: 450px;
+    height: auto;
+    background: #dedede;
+    border-radius: 5px;
+}
+.titulo{
+    padding: 20px 210px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #130f40;
+}
+.sesion_form{
+    padding: 20px 40px;
+}
+.sesion_form .enum{
+    font-size: 18px;
+    color: #130f40;
+    margin: 5px 0;
+}
+.sesion_form .enum2{
+    margin-top: 30px;
+}
+.sesion_form input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+.sesion_form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #1a237e;
+    border-radius: 3px;
+    border: 1px solid #3949ab;
+    transition: .5s;
+}
+.sesion_form button:hover{
+    background: #151c6a;
+}
+.sesion_form #error_email,
+.sesion_form #error_pass{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #c62828;
+    background: rgba(255,0,0,0,1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #ef9a9a;
+    display: none;
+}
