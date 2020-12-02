@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>MOS</title>
+
+    <!-- Favicon de la pág MOS -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Bootstrap archivo CSS de la librería definida -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Archivos CSS para las librerias ya definidas (animación, iconos, interacciónUsuario, fuentes, galeria) -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Archivo CSS principal -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    Autor: Ángel Lahuerta Romero
+    Empresa: KOKOA Software
+    Web: MOS 
+    Versión: 1.0
+    ============================================================ -->
+</head>
+
+<body>
+    <!--Clase NavBar para el menu de nvegación principal-->
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll" href="">M O S</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll active" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#visor">Visor VR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#library">Biblioteca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#service">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="login.html">Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Comportamiento pág. inicio para animación y fondo en segundo plano-->
+    <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+        <div class="overlay-itro"></div>
+        <div class="intro-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <h1 class="intro-title mb-4">Bienvenido</h1>
+                    <p class="intro-subtitle">
+                        <span class="text-slider-items">Conectate donde quieras,Tu pones el limite,KOKOA Software</span>
+                        <strong class="text-slider"></strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <!--Sección para el apartado del Visor VR-->
+    <section id="visor" class="services-mf route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <br>
+                        <h3 class="title-a">
+                            Visor VR
+                        </h3>
+                        <p class="subtitle-a">
+                            Comprueba nuestro VisorVR, con esta sencilla demo.
+                        </p>
+                        <!--API PanoRaven para Visor VR con imagen en 360 grados-->
+                        <iframe width="90%" height="500px" allowFullScreen="true"
+                            allow="accelerometer; magnetometer; gyroscope"
+                            src="https://panoraven.com/es/embed/6dXzXZV44q">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <!--Sección para el apartado de la Biblioteca-->
+    <section id="library" class="services-mf route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <br>
+                        <h3 class="title-a">
+                            Biblioteca
+                        </h3>
+                        <p class="subtitle-a">
+                            Aquí podrás encontrar los tipos de temas, así como la cantidad disponible.
+                        </p>
+                        <table style="margin: 0 auto;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Contenido</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Tipo de Acceso</th>
+                                    <th scope="col">Habilitado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Educación</th>
+                                    <td>356</td>
+                                    <td>Requerido</td>
+                                    <td>✔</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Profesional</th>
+                                    <td>879</td>
+                                    <td>Requerido</td>
+                                    <td>✔</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Multimedia</th>
+                                    <td>234</td>
+                                    <td>Abierto</td>
+                                    <td>X</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Social</th>
+                                    <td>67</td>
+                                    <td>Abierto</td>
+                                    <td>✔</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <!--Sección para el apartado de los servicios-->
+    <section id="service" class="services-mf route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <br>
+                        <h3 class="title-a">
+                            Servicios
+                        </h3>
+                        <p class="subtitle-a">
+                            Aprovecha nuestras tecnologías para una mejor experiencia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--Servicios | Tecnología VisionTrue-->
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-monitor"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Vision True</h2>
+                            <p class="s-description text-center">
+                                Con VisionTrue podrás obtener la mejor iluminación perfecta,
+                                esto es posible gracias a los sensores de tu visor. Es capaz de regular la
+                                intensidad del bloque de iluminación que integra VisorVR.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Servicios | Tecnología Open Constructor-->
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-code-working"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Open Constructor</h2>
+                            <p class="s-description text-center">
+                                MOS integra un entorno propieatario, donde los desarrolladores
+                                pueden aportar solicitudes para mejoras de la plataforma. Para ello deberás
+                                obtener un acceso especial.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Servicios | Tecnología PixelGrabber-->
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-camera"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Pixel Grabber</h2>
+                            <p class="s-description text-center">
+                                Imagina estar en una reunión, y querer tomar una foto a
+                                un contenido. Con PixelGrabber puedes tomar una captura en cualquier
+                                momento, usando un comando de voz personalizable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Equipo de MOS y KOKOA Software-->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(img/client-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonial-mf" class="owl-carousel owl-theme">
+                        <div class="testimonial-box">
+                            <div class="author-test">
+                                <img src="img/miembroEquipo.jpg" alt="" class="rounded-circle b-shadow-a">
+                                <span class="author">Angel Lahuerta</span>
+                            </div>
+                            <div class="content-test">
+                                <p class="description lead">
+                                    Fundador y CEO de KOKOA Software, empresa propietaria de MOS.
+                                    Responsable de desarrollo y evolución de MOS. Estudiante en Desarrollo
+                                    de Software Web (EUSA), e Ingeniería del Software (UOC).
+                                </p>
+                                <span class="comit"><i class="fa fa-quote-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Sección para el apartado de Contacto-->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/client-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-mf">
+                        <div id="contact" class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="title-box-2">
+                                        <h5 class="title-left">
+                                            ¿Necesitas ayuda?
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <form action="" method="post" role="form" class="contactForm">
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" name="name" class="form-control" id="name"
+                                                            placeholder="Nombre" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                            placeholder="Email" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" name="subject" class="form-control"
+                                                            id="subject" placeholder="Asunto" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" name="message" rows="5"
+                                                            placeholder="Mensaje"></textarea>
+                                                        <div class="validation"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button type="submit"
+                                                        class="button button-a button-big button-rouded">Enviar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="title-box-2 pt-4 pt-md-0">
+                                        <h5 class="title-left">
+                                            Estamos en
+                                        </h5>
+                                    </div>
+                                    <div class="more-info">
+                                        <ul class="list-ico">
+                                            <li><span class="ion-ios-location"></span> Edificio 4 Gran Vía, Madrid 14005
+                                            </li>
+                                            <li><span class="ion-ios-telephone"></span> (+34) 912 33 97 78</li>
+                                            <li><span class="ion-email"></span> asistencia@mos.com</li>
+                                        </ul>
+                                    </div>
+                                    <div class="socials">
+                                        <ul>
+                                            <li><a href=""><span class="ico-circle"><i
+                                                            class="ion-social-facebook"></i></span></a></li>
+                                            <li><a href=""><span class="ico-circle"><i
+                                                            class="ion-social-twitter"></i></span></a></li>
+                                            <li><a href=""><span class="ico-circle"><i
+                                                            class="ion-social-instagram"></i></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Sección exclusiva para el pie de pág. final-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="copyright-box">
+                            <p class="copyright">&copy; Copyright <strong>MOS</strong>. Todos los derechos reservados
+                            </p>
+                            <div class="credits">
+                                Desarrollado por KOKOA Software
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!--Sección para el evento y boton de subir al Inicio-->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+
+    <!-- Librería enlazada para Bootstrap y JS -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
